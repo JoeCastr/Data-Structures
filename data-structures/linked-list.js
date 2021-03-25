@@ -21,7 +21,7 @@ class LinkedList {
 
     while (current.next) {
       count += 1;
-      count(current.next)
+      current = current.next
     }
 
     return count;
