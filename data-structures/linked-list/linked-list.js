@@ -27,3 +27,8 @@ class LinkedList {
     return count;
   }
 }
+
+module.exports = {
+  node: Node,
+  linkedList: LinkedList
+}
