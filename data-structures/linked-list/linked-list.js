@@ -27,11 +27,7 @@ class LinkedList {
     return count;
   }
 
-  // create a function that will retrieve a node containing specified data
   returnNodeWith(data, head) {
-    // iterate through each node, starting at the head
-    // once the currentNode.data = data
-    // // return the currentNode object
     let current = head
 
     while (current && current.data != data) {

@@ -3,3 +3,10 @@
 Above you'll find this and more.
 
 This repo will continue to grow over time.
+
+To run the tests on your machine
+
+1. Clone the repo: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+2. Within the root of the cloned directory, run `jest` to run all tests
+
+
