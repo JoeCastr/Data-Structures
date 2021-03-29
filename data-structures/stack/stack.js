@@ -5,17 +5,13 @@ class Node {
   }
 }
 
-let nodeA = new Node("A");
-let nodeB = new Node("B");
-let nodeC = new Node("C");
-
-class Queue {
+class Stack {
   constructor() {
     this.front = null;
     this.back = null;
   }
 
-  enqueue(data) {
+  push(data) {
     data.next = this.front;
 
     if ((!this.front) && (!this.back)) {
@@ -26,19 +22,14 @@ class Queue {
     this.front = data;
   };
 
-  dequeue() {
-    let current = this.front;
-
-    while (current.next.next != null) {
-      current = current.next;
-    }
-
-    delete this.back;
-    this.back = current;
+  pop() {
+    let newFront = this.front.next;
+    delete this.front;
+    this.front = newFront
   };
 }
 
 module.exports = {
   node: Node,
-  queue: Queue
+  stack: Stack
 }
