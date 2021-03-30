@@ -5,9 +5,9 @@ class Node {
   }
 }
 
-let nodeA = new Node("A");
-let nodeB = new Node("B");
-let nodeC = new Node("C");
+const nodeA = new Node('A');
+const nodeB = new Node('B');
+const nodeC = new Node('C');
 
 class Queue {
   constructor() {
@@ -24,7 +24,7 @@ class Queue {
     }
 
     this.front = data;
-  };
+  }
 
   dequeue() {
     let current = this.front;
@@ -35,10 +35,10 @@ class Queue {
 
     delete this.back;
     this.back = current;
-  };
+  }
 }
 
 module.exports = {
-  node: Node,
-  queue: Queue
-}
+  Node,
+  Queue,
+};

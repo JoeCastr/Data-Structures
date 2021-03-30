@@ -20,16 +20,16 @@ class Stack {
     }
 
     this.front = data;
-  };
+  }
 
   pop() {
-    let newFront = this.front.next;
+    const newFront = this.front.next;
     delete this.front;
-    this.front = newFront
-  };
+    this.front = newFront;
+  }
 }
 
 module.exports = {
-  node: Node,
-  stack: Stack
-}
+  Node,
+  Stack,
+};
