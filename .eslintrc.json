@@ -13,6 +13,9 @@
     "rules": {
       "max-classes-per-file": "off",
       "no-param-reassign": "off",
-      "no-unused-vars": "warn"
+      "no-unused-vars": "warn",
+      "no-unused-expressions": "warn",
+      "class-methods-use-this": "warn",
+      "no-unneeded-ternary": "warn"
     }
 }
