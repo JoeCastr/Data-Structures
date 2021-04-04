@@ -15,7 +15,7 @@ test('euclideanAlgorithm(1071, 462) === 21', () => {
 });
 
 test('euclideanAlgorithm("1", 3) === undefined', () => {
-  expect(euclideanAlgorithm("1", 3)).toBe(undefined);
+  expect(euclideanAlgorithm('1', 3)).toBe(undefined);
 });
 
 test('euclideanAlgorithm(0, 0) === undefined', () => {

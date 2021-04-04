@@ -19,6 +19,7 @@
       "no-unneeded-ternary": "warn",
       "consistent-return": "off",
       "no-use-before-define": "off",
-      "no-undef": "warn"
+      "no-undef": "warn",
+      "space-in-parens": "off"
     }
 }
