@@ -1,8 +1,15 @@
 class Pascal {
-  constructor() {
+  constructor(rows) {
     this.triangle = {
       0: [1],
     };
+    this.buildRowsTo(rows);
+  }
+
+  buildRowsTo(rows) {
+    while (!Array.isArray(this.triangle[rows])) {
+      this.createNextRow();
+    }
   }
 
   createNextRow() {
